@@ -19,7 +19,10 @@
       <Label id="_IDGenLabel2" text="Employee Name"/>
       <Input id="empName"/>
 
-      <Label id="_IDGenLabel3" text="Salary"/>
+            <Label id="_IDGenLabel3" text="Employee Dept"/>
+      <Input id="empDept"/>
+
+      <Label id="_IDGenLabel4" text="Salary"/>
       <Input id="empSalary" type="Number"/>
 
       <Button id="_IDGenButton" text="Display" icon="sap-icon://search" press="onDisplayPress"/>
