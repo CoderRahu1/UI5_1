@@ -1,0 +1,16 @@
+<mvc:View controllerName="ui5project1.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <App id="app">
+        <Page id="page1" title="Home">
+            <content>
+                <Button id="idbatMan"
+                        text="Home"
+                        icon="sap-icon://add"
+                        press="onHomePress" />
+            </content>
+        </Page> 
+    </App>
+</mvc:View>

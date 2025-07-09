@@ -1,0 +1,28 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:form="sap.ui.layout.form"
+  controllerName="ui5project1.controller.EmpDetails">
+
+  <Page id="_IDGenPage" title="Employee Details Form">
+    <form:SimpleForm id="_IDGenSimpleForm"
+      editable="true"
+      layout="ResponsiveGridLayout"
+      labelSpanL="3" labelSpanM="3"
+      emptySpanL="4" emptySpanM="4"
+      columnsL="1" columnsM="1"
+      class="sapUiSmallMargin">
+
+      <Label id="_IDGenLabel1" text="Employee No"/>
+      <Input id="empNo"/>
+
+      <Label id="_IDGenLabel2" text="Employee Name"/>
+      <Input id="empName"/>
+
+      <Label id="_IDGenLabel3" text="Salary"/>
+      <Input id="empSalary" type="Number"/>
+
+      <Button id="_IDGenButton" text="Display" icon="sap-icon://search" press="onDisplayPress"/>
+    </form:SimpleForm>
+  </Page>
+</mvc:View>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSDay 01</title>
+        <script src="controller/lifesaver.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {  
+                $("#myBox").on("mouseenter", function() {
+                    // alert("Mouse enter");
+                    jMagic(true);
+                });
+        
+                $("#myBox").on("mouseleave", function() {
+                    // alert("Mouse leave");
+                    jMagic(false);
+                });
+            });
+        </script>
+
+        
+
+        </script>
+        
+    </head>
+    <body style="background-color: lightgreen;">
+        <!-- jQuery-->
+        <div id="myBox" style="width: 60px; height: 60px; background-color:red;"></div>
+        <button onclick="jMagic(true)">Zoom In</button>
+        <button onclick="jMagic(false)">Zoom Out</button>
+
+        <!--jQuery effects-->
+
+        <button onclick="applyEffect()">Apply Effect</button>
+
+
+        <div class="container">   
+        <h1>Welcome to JSDay 01 </h1>
+        <label>Username:</label>
+         <input id="Rahul" name="username">
+        <br>  
+        <label>Password:</label>
+        <input type="password" id="password" name="password">
+        <label style="color: red;" id="message"></label>
+        <button onclick="rahulFunction()">Login</button>
+        <button onclick="addNew()">Add New</button>
+        <div id="m1"> </div>
+        <h4>Please enter your credentials:</h4>
+
+        <button type="button" onclick="jHide()">Reset</button>
+    </div>
+
+    <!-- jQuery Function-->
+    
+    
+    </div>
+    
+
+    </body>
+    <footer>
+        <p>© 2025 JSDay. All rights reserved.</p>
+    </footer>
+</html>

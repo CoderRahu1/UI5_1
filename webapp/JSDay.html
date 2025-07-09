@@ -1,0 +1,54 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSDay</title>
+    <script>
+
+        function addSession() { 
+            var sessionName = document.getElementById("sessionName").value;
+            var speakerName = document.getElementById("speakerName").value;
+            var sessionTime = document.getElementById("sessionTime").value;
+            var table = document.querySelector("table");
+            var newRow = table.insertRow();
+            newRow.insertCell(0).textContent = sessionName;
+            newRow.insertCell(1).textContent = speakerName;
+            newRow.insertCell(2).textContent = sessionTime;
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <br>
+
+    <table border="1px" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>Session</th>
+            <th>Speaker</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Keynote</td>
+            <td>Jane Doe</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>Workshop</td>
+            <td>John Smith</td>
+            <td>11:00 AM</td>
+        </tr>
+
+    <br>
+
+    <input id="sessionName" type="text" placeholder="Session Name"></input>
+    <input id="speakerName" type="text" placeholder="Speaker Name"></input>
+    <input id="sessionTime" type="text" placeholder="Session Time"></input>
+    <button onclick="addSession()">Add</button>
+
+    <br>
+
+</body>
+</html>
